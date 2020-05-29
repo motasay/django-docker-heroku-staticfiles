@@ -6,4 +6,4 @@ release:
     command:
         - python manage.py collectstatic --no-input
 run:
-    web: gunicorn hellp_project.wsgi
+    web: gunicorn hello_project.wsgi
