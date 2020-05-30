@@ -9,3 +9,5 @@ WORKDIR /django-heroku-staticfiles
 COPY . /django-heroku-staticfiles
 
 RUN pip install -r requirements.txt
+
+RUN python manage.py collectstatic --no-input
